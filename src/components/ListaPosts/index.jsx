@@ -5,8 +5,7 @@ export default function ListaPosts({ posts }) { // posts vem das props
 
   return (
     <div>
-      <h1>Lista de Posts</h1>
-      {posts.map((post) => (
+        {posts.map((post) => (
         <div key={post.id}>
           <h2>{post.titulo}</h2>
           <p>{post.conteudo}</p>

@@ -3,7 +3,7 @@ import axios from "axios";
 
 const baseURL = "http://localhost:3000/posts/";
 
-export default function CriarPosts() {
+export default function CriaPosts() {
   const [titulo, setTitulo] = useState(""); // Estado para o título
   const [conteudo, setConteudo] = useState(""); // Estado para o conteúdo
   const [autor, setAutor] = useState(""); // Estado para o autor

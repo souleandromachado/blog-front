@@ -1,7 +1,10 @@
 import axios from "axios";
 import React from "react";
 import ListaPosts from "./components/ListaPosts";
-import CriarPosts from "./components/CriarPosts";
+import CriaPosts from "./components/CriaPosts";
+import AtualizaPosts from "./components/AtualizaPosts";
+import Header from './components/Header';
+
 
 const baseURL = "http://localhost:3000/posts/";
 
@@ -22,8 +25,10 @@ export default function App() {
 
   return (
     <div>
+      <Header />
       <ListaPosts posts={posts} />
-      <CriarPosts />
+      
+      <AtualizaPosts />
       
     </div>
   );
