@@ -28,8 +28,6 @@ export default function App() {
       <Header />
       <ListaPosts posts={posts} />
       
-      <AtualizaPosts />
-      
     </div>
   );
 }
