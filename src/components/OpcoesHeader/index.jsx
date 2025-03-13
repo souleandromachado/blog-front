@@ -14,7 +14,8 @@ const Opcao = styled.li`
   justify-content: flex-end;
   height: 100%;
   cursor: pointer;
-  margin-left: 100px;
+  margin-left: 50px;
+  margin-right: 20px;
   background-color: #439846;
   padding: 3px 50px;
   border-radius: 10px;

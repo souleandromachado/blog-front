@@ -24,18 +24,18 @@ const Texto = styled.h2`
 
 const SearchBarContainer = styled.div`
   background-color: #00838F;
-  padding: 15px;
+  padding: 8px;
   width: 100%; 
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  box-sizing: border-box;  /* Garante que padding/border não afetem a largura */
   margin-top: 90px;  /* Garante que a barra de busca apareça abaixo do header fixo */
+
 `;
 
 const SearchInput = styled.input`
-  width: 50%;  /* Ajuste o tamanho conforme necessário */
-  padding: 10px;
+  width: 15%;  /* Ajuste o tamanho conforme necessário */
+  padding: 15px;
+  margin-right: 90px;
   font-size: 16px;
   border: none;
   border-radius: 10px;
