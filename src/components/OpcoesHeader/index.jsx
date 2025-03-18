@@ -21,7 +21,7 @@ const Opcao = styled.li`
   border-radius: 10px;
   color: white; /* Cor padrão do texto */
   &:hover {
-    color: yellow; /* Altera a cor do texto ao passar o mouse */
+    background-color: #0056b3;
   }
 `
 

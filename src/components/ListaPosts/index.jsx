@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 import React from "react";
+import AcessarPosts from "../AcessarPosts";
 
 const Posts = styled.div`
   margin-left: 100px;
   margin-right: 100px;
-  
-  
 `;
 
 const PostItem = styled.div`
@@ -13,11 +12,15 @@ const PostItem = styled.div`
   padding: 15px;
   border-radius: 10px;
   margin-top: 20px;
-  margin-bottom: 20px; /* Espaçamento entre os posts */
+  margin-bottom: 10px;
+  position: relative;
+`;
 
-  &:last-child {
-    margin-bottom: 0; /* Remove margem do último post */
-  }
+const PostFooter = styled.div`
+  display: flex;
+  justify-content: flex-end; /* Move o botão para o lado direito */
+  margin-top: -50px; /* Ajuste para subir o botão */
+  margin-bottom: 5px;
 `;
 
 export default function ListaPosts({ posts }) {
@@ -30,6 +33,9 @@ export default function ListaPosts({ posts }) {
           <h2>{post.titulo}</h2>
           <p>{post.conteudo}</p>
           <p><strong>Autor:</strong> {post.autor}</p>
+          <PostFooter>
+            <AcessarPosts />
+          </PostFooter>
         </PostItem>
       ))}
     </Posts>

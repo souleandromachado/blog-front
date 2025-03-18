@@ -6,6 +6,7 @@ import AtualizaPosts from "./components/AtualizaPosts";
 import Header from './components/Header';
 
 
+
 const baseURL = "http://localhost:3000/posts/";
 
 export default function App() {
